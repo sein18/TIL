@@ -21,7 +21,7 @@
   * `cd` : 현재 작업 중인 디렉토리를 변경하는 명령어
   * `rm` : 휴지통으로 넣지않고 완전 삭제하는 명령어로 조심!
 
-
+---
 
 2. Visual Studio Code를 활용한 git 버전 괸리
 
@@ -41,6 +41,8 @@
   * commits 목록 출력
     * git log
     * git log --oneline  # 한줄로 보기 옵션
+
+---
 
 3. markdown(Typora 사용)
 
@@ -87,7 +89,7 @@ ctrl + t로 만드는게 편하다.
 
 구분선
 
-
+---
 
 4. github사용법
 
