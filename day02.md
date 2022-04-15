@@ -46,7 +46,7 @@ $ git clone <https://~~/~.git>
 * branch
 
   -  Branch는 `나뭇가지`라는 뜻의 영어 단어다.
-  - 즉 `브랜치`란 나뭇가지처럼 여러 갈래로 작업 공간을 나누어 **독립적으로 작업**할 수 있도록 도와주는 Git의 도구다.
+  -  즉 `브랜치`란 나뭇가지처럼 여러 갈래로 작업 공간을 나누어 **독립적으로 작업**할 수 있도록 도와주는 Git의 도구다.
 
 * git branch (조회, 생성, 삭제 명령어)
 
@@ -85,5 +85,31 @@ $ git clone <https://~~/~.git>
     $ git switch -c <브랜치 이름> <커밋 ID>
     ```
 
+---
 
+4. Beanch Merge(합병)
+
+---
+
+* branch merge
+
+  * 현재까지는 독립된 작업 공간을 만드는 법만 진행했으며 협업을 통해 합치는 방법이다.
+  * `git merge <합칠 브랜치 이름>` 의 형태로 사용한다.
+  * merge를 하기전에 메인 브랜치로 설정하여 사용한다.
+
+  ```bash
+  # 1. 현재 branch1과 branch2가 있고, HEAD가 가리키는 곳은 branch1 입니다.
+  $ git branch
+  * branch1
+    branch2
+  
+  # 2. branch2를 branch1에 합치려면?
+  $ git merge branch2
+  
+  # 3. branch1을 branch2에 합치려면?
+  $ git switch branch2
+  $ git merge branch1
+  ```
+
+* `git branch -d <합친 후 메인브랜치말고 남음 브랜치> ` 제거 해준다.(메모리 관리 차원)
 
